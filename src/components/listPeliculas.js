@@ -58,11 +58,11 @@ class ListPeliculas extends Component {
 	}
 
     mostrarDetalle(){
-        console.log(this.state.selected)
+        
+        
         if(this.state.selected !== null){
             console.log(this.state.selected.poster)
             return <Pelicula value ={this.state.selected}></Pelicula>
-            
         }
     }
 

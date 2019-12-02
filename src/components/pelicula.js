@@ -12,14 +12,14 @@ class Pelicula extends Component {
         return (
             <div>
                 <Card style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src={this.state.image} />
+                    <Card.Img variant="top" src={this.props.value.poster} />
                     <Card.Body>
-                    <Card.Title>{this.state.name}</Card.Title>
+                    <Card.Title>{this.props.value.name}</Card.Title>
                         <Card.Text>
-                        {this.state.descripcion}
+                        {this.props.value.description}
                         </Card.Text>
                         <Card.Text>
-                        Cast : {this.state.cast}
+                        Cast : {this.props.value.cast}
                         </Card.Text>
                     </Card.Body>
                 </Card>
